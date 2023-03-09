@@ -1,0 +1,6 @@
+[submodule "better_serve_lib"]
+	path = better_serve_lib
+	url = https://github.com/arabisaldrin/better-serve-lib.git
+[submodule "better-serve-lib"]
+	path = better-serve-lib
+	url = https://github.com/arabisaldrin/better-serve-lib.git
