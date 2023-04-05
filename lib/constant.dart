@@ -3,8 +3,8 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 
 final supabase = Supabase.instance.client;
 
-String publicPath(String? path) {
-  return "https://zshwkohgxpaaonnogbem.supabase.co/storage/v1/object/public${path ?? ''}";
+String publicPath(String path, [String bucket = "images"]) {
+  return supabase.storage.from(bucket).getPublicUrl(path).data!;
 }
 
 const List<Color> orderStatusColor = [
